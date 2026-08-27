@@ -171,9 +171,9 @@ const s9 = p.addSlide();
 s9.background = bg(GRAPE);
 s9.addText("Where it lives & what\u2019s next", { x: 0.8, y: 0.5, w: 9, h: 0.8, fontFace: FONT, bold: true, fontSize: 30, color: WHITE });
 const live = [
-  ["Live now", "github.com/KapilanJavaScript/little-blossoms-website (dedicated, fresh)"],
-  ["Live now", "GitHub Pages: kapilanjavascript.github.io/little-blossoms-site"],
-  ["Next", "Custom domain \u2014 littleblossoms.in"],
+  ["Live now", "little-blossoms.higgsfield.app — the main site"],
+  ["Live now", "Website repository — deployed and version-controlled"],
+  ["Next", "Custom domain — littleblossoms.in"],
   ["Next", "Final content: real address, fees and WhatsApp number"],
   ["Next", "Optional cover video for the feed card"],
 ];
@@ -191,8 +191,8 @@ s10.addShape("ellipse", { x: 10.9, y: -1.4, w: 3.6, h: 3.6, fill: { color: WHITE
 s10.addShape("ellipse", { x: -1.5, y: 5.6, w: 3.4, h: 3.4, fill: { color: WHITE, transparency: 90 }, line: { color: WHITE, transparency: 90 } });
 s10.addText("Thank you!", { x: 1.0, y: 2.2, w: 11.3, h: 1.4, fontFace: FONT, bold: true, fontSize: 54, color: WHITE });
 s10.addText("Play today. Blossom tomorrow.", { x: 1.0, y: 3.7, w: 11.3, h: 0.8, fontFace: FONT, fontSize: 22, color: SUN, italic: true });
-s10.addText("Little Blossoms Play School \u2014 12 Blossom Lane, Green Park, Bengaluru", { x: 1.0, y: 5.4, w: 11.3, h: 0.5, fontFace: BODY, fontSize: 14, color: "D9C9F3" });
-s10.addText("WhatsApp +91 90000 00000  |  kapilanjavascript.github.io/little-blossoms-site", { x: 1.0, y: 6.0, w: 11.3, h: 0.5, fontFace: BODY, fontSize: 14, color: "C6B3EE" });
+s10.addText("Little Blossoms Play School — 12 Blossom Lane, Green Park, Bengaluru", { x: 1.0, y: 5.4, w: 11.3, h: 0.5, fontFace: BODY, fontSize: 14, color: "D9C9F3" });
+s10.addText("WhatsApp +91 90000 00000  |  hello@littleblossoms.in", { x: 1.0, y: 6.0, w: 11.3, h: 0.5, fontFace: BODY, fontSize: 14, color: "C6B3EE" });
 
 p.writeFile({ fileName: "Little-Blossoms-Website-Presentation.pptx" }).then((f) => {
   console.log("saved", f);
