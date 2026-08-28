@@ -44,6 +44,27 @@ inc.forEach((f, i) => {
 s2.addShape("roundRect", { x: 0.8, y: 6.6, w: 11.6, h: 0.7, rectRadius: 0.35, fill: { color: LAV }, line: { color: GRAPE, width: 1 } });
 s2.addText("A working, worry-free site: fixed, hosted, domain-ready and free to adjust for 2 months.", { x: 0.8, y: 6.6, w: 11.6, h: 0.7, align: "center", fontFace: BODY, fontSize: 14, color: GRAPE, valign: "middle" });
 
+// ---------- S2b Designs ----------
+const s2b = p.addSlide();
+s2b.background = { color: WHITE };
+s2b.addText("Designs & everything needed to start", { x: 0.8, y: 0.5, w: 11, h: 0.8, fontFace: FONT, bold: true, fontSize: 30, color: GRAPE });
+s2b.addText("We don\u2019t just build the site \u2014 we give you the designs it needs and everything required to go live", { x: 0.8, y: 1.3, w: 11.4, h: 0.5, ...body() });
+const dsg2 = [
+  ["Additional designs", "Logos, banners, icons, poster/brochure graphics, social-media creatives \u2014 designed for you in your brand style"],
+  ["Photos & content", "Use your photos or we guide you \u2014 we advise and prepare what the site needs"],
+  ["Domain & server", "We set up and configure your domain and server \u2014 handled for you"],
+  ["Start checklist", "Name, logo, photos, basic text, contact details, preferred domain \u2014 we walk you through it"],
+];
+dsg2.forEach((f, i) => {
+  const y = 2.1 + i * 1.05;
+  s2b.addShape("oval", { x: 0.9, y, w: 0.5, h: 0.5, fill: { color: TEAL }, line: { color: TEAL } });
+  s2b.addText(String(i + 1), { x: 0.9, y, w: 0.5, h: 0.5, align: "center", bold: true, color: WHITE, fontSize: 16, fontFace: FONT, valign: "middle" });
+  s2b.addText(f[0], { x: 1.6, y: y - 0.03, w: 3.6, h: 0.4, fontFace: FONT, bold: true, fontSize: 16, color: INK });
+  s2b.addText(f[1], { x: 5.3, y: y + 0.02, w: 7.2, h: 0.85, ...body({ size: 13 }) });
+});
+s2b.addShape("roundRect", { x: 0.9, y: 6.55, w: 11.5, h: 0.7, rectRadius: 0.35, fill: { color: SUN }, line: { color: SUN } });
+s2b.addText("Main promise: you hand us your school, we deliver a ready-to-use website with its complete visual kit.", { x: 0.9, y: 6.55, w: 11.5, h: 0.7, align: "center", fontFace: BODY, bold: true, fontSize: 14, color: INK, valign: "middle" });
+
 // ---------- S3 Add-ons ----------
 const s3 = p.addSlide();
 s3.background = { color: WHITE };
@@ -95,7 +116,7 @@ s4.addText("Unlimited update requests within the plan \u2014 content refreshes h
 const s5 = p.addSlide();
 s5.background = { color: WHITE };
 s5.addText("Self-managed option", { x: 0.8, y: 0.5, w: 8, h: 0.8, fontFace: FONT, bold: true, fontSize: 30, color: GRAPE });
-s5.addText("For schools that want to upload and maintain their own content \u2014 full control, no dependency", { x: 0.8, y: 1.3, w: 10.4, h: 0.5, ...body() });
+s5.addText("For schools that want to upload and maintain their own content \u2014 full control, no dependency. Available on both Tier 1 and Tier 2.", { x: 0.8, y: 1.3, w: 11.4, h: 0.5, ...body() });
 const box = [
   ["2 websites", "One public site + one private user/admin site"],
   ["1 backend", "An admin store where you manage everything"],
